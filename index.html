@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/tailwind.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <title>Invoices - Test</title>
+  </head>
+  <body>
+    <main class="mx-auto pt-5 pb-5 px-10">
+      <header
+        class="relative"
+      >
+        <img src="./assets/bg.svg" alt="header-background" class="-z-1 absolute left-0 top-0 w-full h-full object-cover" />
+        <div class="relative z-10 px-4 py-4 flex lg:items-center flex-col lg:flex-row justify-between gap-4 text-gray-300 font-weight-300 text-[28px]">
+          <h1 class="border-[1.5px] border-gray-300 px-[10px]">
+            Traitement des Factures d'Achats
+          </h1>
+          <div class="flex flex-row jusTOTAUXtify-between items-center gap-4">
+            <p class="border-[1.5px] border-gray-300 px-[10px]">
+              Société : ASFED AIR
+            </p>
+            <p class="border-[1.5px] border-gray-300 px-[10px]">
+              Exercice : 2024
+            </p>
+          </div>
+        </div>
+      </header>
+      <section
+        class="mt-4 flex lg:items-center flex-row lg:flex-row lg:justify-between items-center md:text-[13px] text-[12px] gap-4"
+      >
+
+        <p
+          class="whitespace-nowrap uppercase p-4 border-b-[1.5px] border-[#C5D9F1] text-black text-sm min-w-[314px]"
+        >
+          Recapitulatif de la saisie
+        </p>
+
+        <div class="flex gap-10 items-center flex-wrap">
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >30</span
+            >
+            <span>FOURNISSEURS</span>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >140</span
+            ><span>FACTURES</span>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >185</span
+            ><span>LIGNES</span>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >1 min</span
+            ><span>TML</span>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >3 min</span
+            ><span>TMP</span>
+          </div>
+          <div class="flex flex-row justify-between items-center">
+            <span
+              class="bg-gray-200 w-[10ch] h-[5ch] p-5.5 flex items-center justify-center"
+              >3 min</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-x-auto max-w-full">
+        <div class="w-full">
+          <div
+            class="my-8 flex items-start w-full flex-col md:flex-row box-border"
+          >
+            <table class="flex-1 w-full [&_tr_div]:min-w-[115px]" data-table="recap-table">
+              <thead
+                class="bg-[#1F497D] [&_td>div]:p-2 [&_th>div]:p-2 [&_th>div]:text-sm [&_th>div]:whitespace-nowrap [&_th>div]:text-center [&_th>div]:text-sm [&_th>div]:text-left [&_th>div]:font-normal [&_th>div]:text-center [&_th>div]:text-white [&_th]:!border-white [&_th]:border"
+              >
+                <tr>
+                  <th class="bg-white w-[315px]""><div class="!bg-white !text-right !text-black">Periodes</div></th>
+                  <th><div>Jan 2024</div></th>
+                  <th><div>Fev 2024</div></th>
+                  <th><div>Mars 2024</div></th>
+                  <th><div>Avr 2024</div></th>
+                  <th><div>Mai 2024</div></th>
+                  <th><div>Juin 2024</div></th>
+                  <th><div>Juil 2024</div></th>
+                  <th><div>Aout 2024</div></th>
+                  <th><div>Sept 2024</div></th>
+                  <th><div>Oct 2024</div></th>
+                  <th><div>Dec 2024</div></th>
+                  <th class="bg-[#1F497D]"><div class="!bg-[#1F497D] !text-center !text-white">Total</div></th>
+                </tr>
+              </thead>
+              <tbody
+                class="[&_td:last-child]:bg-[#1F497D] [&_td:not(:last-child)]:bg-[#C5D9F1] [&_td>div]:p-2 [&_td]:text-sm [&_td>div]:whitespace-nowrap [&_td]:text-center [&_td]:divide-x [&_td]:!border-white [&_td]:border [&_td>div]:min-h-[32px]"
+              >
+                <tr>
+                  <td class="!bg-white">
+                    <div class="text-right"">Placeholder</div>
+                  </td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                  <td><div></div></td>
+                </tr>
+              </tbody>
+              <tfoot
+                class="[&_td>div]:bg-[#1F497D] [&_td]:!p-0 [&_td>div]:p-2 [&_td]:text-sm [&_td>div]:whitespace-nowrap [&_td]:text-center [&_td>div]:text-white [&_td]:border-[#1F497D] [&_td]:border-b-2 [&_td]:border-x-0.25 [&_td>div]:mt-3 [&_td]:border-collapse"
+              >
+                <tr>
+                  <td class="!border-[#C5D9F1] !border-b-2">
+                    <div class="!bg-white !text-black text-right">TOTAUX</div>
+                  </td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                  <td><div>0,00 DH</div></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-x-auto max-w-full">
+        <div class="w-full">
+          <div
+            class="my-8 flex items-start w-full flex-col md:flex-row box-border"
+          >
+            <p
+              class="whitespace-nowrap uppercase p-4 border-b-[1.5px] border-[#C5D9F1] text-black text-sm min-w-[314px]"
+            >
+              Saisie de factures
+            </p>
+            <table
+              class="divide-y divide-gray-200 flex-1 w-full"
+              data-table="invoices"
+            >
+              <thead>
+                <tr
+                  class="[&>th]:text-sm [&>th]:text-left [&>th]:rtl:text-right [&>th]:font-normal [&>th]:p-4 [&>th]:uppercase [&>th]:text-center [&>th]:text-black [&>th]:whitespace-nowrap"
+                  data-row="invoices-header"
+                >
+                  <th><div>Date</div></th>
+                  <th><div>N de fac</div></th>
+                  <th><div>Fournisseur</div></th>
+                  <th><div>N Compte</div></th>
+                  <th><div>Nature des biens</div></th>
+                  <th><div>Taxe</div></th>
+                  <th><div>Rubrique</div></th>
+                  <th><div>Montant HT</div></th>
+                  <th><div>Taux Taxe</div></th>
+                  <th><div>Montant Taxe</div></th>
+                  <th><div>Montant TTC</div></th>
+                </tr>
+              </thead>
+              <tbody
+                class="bg-white divide-y divide-gray-200 [&_td]:p-2 [&_td]:text-sm [&_td]:whitespace-nowrap [&_td:last-child]:text-right [&_td:last-child]:bg-[#C5D9F1] [&_td]:border-[1.5px] [&_td]:border-[#C5D9F1] [&_td]:text-center [&_td:nth-child(3)]:text-left [&_td:nth-child(5)]:text-left [&_td:nth-child(3)]:text-left [&_td:nth-child(8)]:text-right [&_td:nth-child(10)]:text-right [&>tr:nth-child(odd):not(:last-child)]:!bg-[#F5F5F5] hover:[&>tr:nth-child(odd):not(:last-child)]:!bg-gray-200 hover:[&>tr:nth-child(even):not(:last-child)]:!bg-gray-100"
+              >
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-end max-w-full w-full">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8 ml-auto mr-0">
+          <div class="inline-block py-2 align-middle md:px-6 xl:px-8 w-full">
+            <section
+              class="my-8 flex items-start w-full flex-col md:flex-row box-border"
+            >
+              <p
+                class="min-w-[340px] whitespace-nowrap uppercase p-4 border-b-[1.5px] border-[#C5D9F1] text-black text-sm"
+              >
+                Paiement de la facture
+              </p>
+              <table
+                class="divide-y divide-gray-200 flex-1 w-full"
+              >
+                <thead>
+                  <tr
+                    class="[&>th]:text-sm [&>th]:text-left [&>th]:rtl:text-right [&>th]:font-normal [&>th]:p-4 [&>th]:uppercase [&>th]:text-center [&>th]:text-black [&>th]:whitespace-nowrap [&>th>div]:min-w-[115px]"
+                  >
+                    <th><div>Date</div></th>
+                    <th><div>Montant</div></th>
+                    <th><div>Ref</div></th>
+                    <th><div>Montant</div></th>
+                    <th><div>Eblissement</div></th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="bg-white divide-y divide-gray-200 [&_td]:text-sm [&_td]:whitespace-nowrap [&_td:last-child]:text-right [&_td:nth-child(4)]:bg-[#C5D9F1] [&_td:nth-child(4)]:border-white [&_td]:border-[1.5px] [&_td]:border-[#C5D9F1] [&_td]:text-center [&>tr:nth-child(odd):not(:last-child)]:!bg-[#F5F5F5] hover:[&>tr:nth-child(odd):not(:last-child)]:!bg-gray-200 hover:[&>tr:nth-child(even):not(:last-child)]:!bg-gray-100 [&_td>div]:min-h-[32px] [&_td>div]:box-border [&_td>div]:p-2"
+                >
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="overflow-x-auto max-w-full">
+        <div>
+          <p
+            class="max-w-[314px] whitespace-nowrap uppercase p-4 border-b-[1.5px] border-[#C5D9F1] text-black text-sm"
+          >
+            FOURNISSEURS
+          </p>
+        </div>
+        <div class="flex flex-row justify-between items-center gap-4">
+          <div class="min-w-[314px]">
+            <table>
+              <thead>
+                <th>
+                  <div class="min-w-[135px] min-h-[36px] text-center mb-2 pb-1 !font-normal"></div>
+                </th>
+              </thead>
+
+              <tbody class="bg-white [&_td]:text-sm [&_td]:whitespace-nowrap [&_td]:border-[1.5px] [&_td]:border-transparent [&_td>div]:min-h-[32px] [&_td>div]:py-2 [&_td:nth-child(6)>div]:bg-[#C5D9F1]">
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+                <tr>
+                  <td><div>ASFED</div></td>
+                </tr>
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+                <tr>
+                  <td><div>AMENDIS</div></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          <div class="flex flex-1 flex-row justify-between items-center gap-4">
+            <div class="mx-auto">
+              <table>
+                <thead>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA Recuperee</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA Recuperee</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA Recuperee</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA Recuperee</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                </thead>
+
+                <tbody class="bg-white divide-y divide-gray-200 [&_td]:text-sm [&_td]:whitespace-nowrap [&_td]:border-[1.5px] [&_td]:border-[#C5D9F1] [&_td]:text-center [&>tr:nth-child(even)]:!bg-[#F5F5F5] hover:[&>tr:nth-child(even)]:!bg-gray-200 hover:[&>tr:nth-child(odd)]:!bg-gray-100 [&_td>div]:min-h-[32px] [&_td>div]:box-border [&_td>div]:p-2 [&_td:nth-child(6)]:!border-[#C5D9F1] [&_td:nth-child(6)>div]:bg-[#C5D9F1] [&_td:nth-child(9)]:!border-[#C5D9F1] [&_td:nth-child(9)>div]:bg-[#C5D9F1]">
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <table>
+                <thead>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA Recuperee</div>
+                  </th>
+                  <th>
+                    <div class="min-w-[135px] border-b-2 border-[#C5D9F1] text-center mb-2 pb-1 !font-normal">TVA A RECUP</div>
+                  </th>
+                </thead>
+
+                <tbody class="bg-white divide-y divide-gray-200 [&_td]:text-sm [&_td]:whitespace-nowrap [&_td]:border-[1.5px] [&_td]:border-[#C5D9F1] [&_td]:text-center [&>tr:nth-child(even)]:!bg-[#F5F5F5] hover:[&>tr:nth-child(even)]:!bg-gray-200 hover:[&>tr:nth-child(odd)]:!bg-gray-100 [&_td>div]:min-h-[32px] [&_td>div]:box-border [&_td>div]:p-2">
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                  <tr>
+                    <td><div></div></td>
+                    <td><div></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
